@@ -1,0 +1,881 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		905D6EF22071EB370061A2AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905D6EF12071EB370061A2AC /* AppDelegate.swift */; };
+		905D6EF42071EB370061A2AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905D6EF32071EB370061A2AC /* ViewController.swift */; };
+		905D6EF72071EB370061A2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905D6EF52071EB370061A2AC /* Main.storyboard */; };
+		905D6EFA2071EB380061A2AC /* HeartKeeper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 905D6EF82071EB380061A2AC /* HeartKeeper.xcdatamodeld */; };
+		905D6EFC2071EB380061A2AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905D6EFB2071EB380061A2AC /* Assets.xcassets */; };
+		905D6EFF2071EB380061A2AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905D6EFD2071EB380061A2AC /* LaunchScreen.storyboard */; };
+		905D6F0A2071EB380061A2AC /* HeartKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905D6F092071EB380061A2AC /* HeartKeeperTests.swift */; };
+		905D6F152071EB380061A2AC /* HeartKeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905D6F142071EB380061A2AC /* HeartKeeperUITests.swift */; };
+		905D6F282071EB4E0061A2AC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905D6F262071EB4E0061A2AC /* Interface.storyboard */; };
+		905D6F2A2071EB4E0061A2AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905D6F292071EB4E0061A2AC /* Assets.xcassets */; };
+		905D6F312071EB4E0061A2AC /* HeartKeeperWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 905D6F302071EB4E0061A2AC /* HeartKeeperWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		905D6F362071EB4E0061A2AC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905D6F352071EB4E0061A2AC /* InterfaceController.swift */; };
+		905D6F382071EB4E0061A2AC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905D6F372071EB4E0061A2AC /* ExtensionDelegate.swift */; };
+		905D6F3A2071EB4E0061A2AC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905D6F392071EB4E0061A2AC /* NotificationController.swift */; };
+		905D6F3C2071EB4E0061A2AC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905D6F3B2071EB4E0061A2AC /* ComplicationController.swift */; };
+		905D6F3E2071EB4F0061A2AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905D6F3D2071EB4F0061A2AC /* Assets.xcassets */; };
+		905D6F432071EB4F0061A2AC /* HeartKeeperWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 905D6F242071EB4E0061A2AC /* HeartKeeperWatch.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		905D6F062071EB380061A2AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 905D6EE62071EB370061A2AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 905D6EED2071EB370061A2AC;
+			remoteInfo = HeartKeeper;
+		};
+		905D6F112071EB380061A2AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 905D6EE62071EB370061A2AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 905D6EED2071EB370061A2AC;
+			remoteInfo = HeartKeeper;
+		};
+		905D6F322071EB4E0061A2AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 905D6EE62071EB370061A2AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 905D6F2F2071EB4E0061A2AC;
+			remoteInfo = "HeartKeeperWatch Extension";
+		};
+		905D6F412071EB4F0061A2AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 905D6EE62071EB370061A2AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 905D6F232071EB4E0061A2AC;
+			remoteInfo = HeartKeeperWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		905D6F472071EB4F0061A2AC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				905D6F312071EB4E0061A2AC /* HeartKeeperWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905D6F4B2071EB4F0061A2AC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				905D6F432071EB4F0061A2AC /* HeartKeeperWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		905D6EEE2071EB370061A2AC /* HeartKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		905D6EF12071EB370061A2AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		905D6EF32071EB370061A2AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		905D6EF62071EB370061A2AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		905D6EF92071EB380061A2AC /* HeartKeeper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HeartKeeper.xcdatamodel; sourceTree = "<group>"; };
+		905D6EFB2071EB380061A2AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		905D6EFE2071EB380061A2AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		905D6F002071EB380061A2AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		905D6F052071EB380061A2AC /* HeartKeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartKeeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		905D6F092071EB380061A2AC /* HeartKeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartKeeperTests.swift; sourceTree = "<group>"; };
+		905D6F0B2071EB380061A2AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		905D6F102071EB380061A2AC /* HeartKeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartKeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		905D6F142071EB380061A2AC /* HeartKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartKeeperUITests.swift; sourceTree = "<group>"; };
+		905D6F162071EB380061A2AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		905D6F242071EB4E0061A2AC /* HeartKeeperWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartKeeperWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		905D6F272071EB4E0061A2AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		905D6F292071EB4E0061A2AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		905D6F2B2071EB4E0061A2AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		905D6F302071EB4E0061A2AC /* HeartKeeperWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HeartKeeperWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		905D6F352071EB4E0061A2AC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		905D6F372071EB4E0061A2AC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		905D6F392071EB4E0061A2AC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		905D6F3B2071EB4E0061A2AC /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		905D6F3D2071EB4F0061A2AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		905D6F3F2071EB4F0061A2AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		905D6F402071EB4F0061A2AC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		905D6EEB2071EB370061A2AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905D6F022071EB380061A2AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905D6F0D2071EB380061A2AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905D6F2D2071EB4E0061A2AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		905D6EE52071EB370061A2AC = {
+			isa = PBXGroup;
+			children = (
+				905D6EF02071EB370061A2AC /* HeartKeeper */,
+				905D6F082071EB380061A2AC /* HeartKeeperTests */,
+				905D6F132071EB380061A2AC /* HeartKeeperUITests */,
+				905D6F252071EB4E0061A2AC /* HeartKeeperWatch */,
+				905D6F342071EB4E0061A2AC /* HeartKeeperWatch Extension */,
+				905D6EEF2071EB370061A2AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		905D6EEF2071EB370061A2AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				905D6EEE2071EB370061A2AC /* HeartKeeper.app */,
+				905D6F052071EB380061A2AC /* HeartKeeperTests.xctest */,
+				905D6F102071EB380061A2AC /* HeartKeeperUITests.xctest */,
+				905D6F242071EB4E0061A2AC /* HeartKeeperWatch.app */,
+				905D6F302071EB4E0061A2AC /* HeartKeeperWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		905D6EF02071EB370061A2AC /* HeartKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				905D6EF12071EB370061A2AC /* AppDelegate.swift */,
+				905D6EF32071EB370061A2AC /* ViewController.swift */,
+				905D6EF52071EB370061A2AC /* Main.storyboard */,
+				905D6EFB2071EB380061A2AC /* Assets.xcassets */,
+				905D6EFD2071EB380061A2AC /* LaunchScreen.storyboard */,
+				905D6F002071EB380061A2AC /* Info.plist */,
+				905D6EF82071EB380061A2AC /* HeartKeeper.xcdatamodeld */,
+			);
+			path = HeartKeeper;
+			sourceTree = "<group>";
+		};
+		905D6F082071EB380061A2AC /* HeartKeeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				905D6F092071EB380061A2AC /* HeartKeeperTests.swift */,
+				905D6F0B2071EB380061A2AC /* Info.plist */,
+			);
+			path = HeartKeeperTests;
+			sourceTree = "<group>";
+		};
+		905D6F132071EB380061A2AC /* HeartKeeperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				905D6F142071EB380061A2AC /* HeartKeeperUITests.swift */,
+				905D6F162071EB380061A2AC /* Info.plist */,
+			);
+			path = HeartKeeperUITests;
+			sourceTree = "<group>";
+		};
+		905D6F252071EB4E0061A2AC /* HeartKeeperWatch */ = {
+			isa = PBXGroup;
+			children = (
+				905D6F262071EB4E0061A2AC /* Interface.storyboard */,
+				905D6F292071EB4E0061A2AC /* Assets.xcassets */,
+				905D6F2B2071EB4E0061A2AC /* Info.plist */,
+			);
+			path = HeartKeeperWatch;
+			sourceTree = "<group>";
+		};
+		905D6F342071EB4E0061A2AC /* HeartKeeperWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				905D6F352071EB4E0061A2AC /* InterfaceController.swift */,
+				905D6F372071EB4E0061A2AC /* ExtensionDelegate.swift */,
+				905D6F392071EB4E0061A2AC /* NotificationController.swift */,
+				905D6F3B2071EB4E0061A2AC /* ComplicationController.swift */,
+				905D6F3D2071EB4F0061A2AC /* Assets.xcassets */,
+				905D6F3F2071EB4F0061A2AC /* Info.plist */,
+				905D6F402071EB4F0061A2AC /* PushNotificationPayload.apns */,
+			);
+			path = "HeartKeeperWatch Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		905D6EED2071EB370061A2AC /* HeartKeeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 905D6F192071EB380061A2AC /* Build configuration list for PBXNativeTarget "HeartKeeper" */;
+			buildPhases = (
+				905D6EEA2071EB370061A2AC /* Sources */,
+				905D6EEB2071EB370061A2AC /* Frameworks */,
+				905D6EEC2071EB370061A2AC /* Resources */,
+				905D6F4B2071EB4F0061A2AC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				905D6F422071EB4F0061A2AC /* PBXTargetDependency */,
+			);
+			name = HeartKeeper;
+			productName = HeartKeeper;
+			productReference = 905D6EEE2071EB370061A2AC /* HeartKeeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		905D6F042071EB380061A2AC /* HeartKeeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 905D6F1C2071EB380061A2AC /* Build configuration list for PBXNativeTarget "HeartKeeperTests" */;
+			buildPhases = (
+				905D6F012071EB380061A2AC /* Sources */,
+				905D6F022071EB380061A2AC /* Frameworks */,
+				905D6F032071EB380061A2AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				905D6F072071EB380061A2AC /* PBXTargetDependency */,
+			);
+			name = HeartKeeperTests;
+			productName = HeartKeeperTests;
+			productReference = 905D6F052071EB380061A2AC /* HeartKeeperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		905D6F0F2071EB380061A2AC /* HeartKeeperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 905D6F1F2071EB380061A2AC /* Build configuration list for PBXNativeTarget "HeartKeeperUITests" */;
+			buildPhases = (
+				905D6F0C2071EB380061A2AC /* Sources */,
+				905D6F0D2071EB380061A2AC /* Frameworks */,
+				905D6F0E2071EB380061A2AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				905D6F122071EB380061A2AC /* PBXTargetDependency */,
+			);
+			name = HeartKeeperUITests;
+			productName = HeartKeeperUITests;
+			productReference = 905D6F102071EB380061A2AC /* HeartKeeperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		905D6F232071EB4E0061A2AC /* HeartKeeperWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 905D6F482071EB4F0061A2AC /* Build configuration list for PBXNativeTarget "HeartKeeperWatch" */;
+			buildPhases = (
+				905D6F222071EB4E0061A2AC /* Resources */,
+				905D6F472071EB4F0061A2AC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				905D6F332071EB4E0061A2AC /* PBXTargetDependency */,
+			);
+			name = HeartKeeperWatch;
+			productName = HeartKeeperWatch;
+			productReference = 905D6F242071EB4E0061A2AC /* HeartKeeperWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		905D6F2F2071EB4E0061A2AC /* HeartKeeperWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 905D6F442071EB4F0061A2AC /* Build configuration list for PBXNativeTarget "HeartKeeperWatch Extension" */;
+			buildPhases = (
+				905D6F2C2071EB4E0061A2AC /* Sources */,
+				905D6F2D2071EB4E0061A2AC /* Frameworks */,
+				905D6F2E2071EB4E0061A2AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HeartKeeperWatch Extension";
+			productName = "HeartKeeperWatch Extension";
+			productReference = 905D6F302071EB4E0061A2AC /* HeartKeeperWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		905D6EE62071EB370061A2AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Paul Asyn";
+				TargetAttributes = {
+					905D6EED2071EB370061A2AC = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					905D6F042071EB380061A2AC = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 905D6EED2071EB370061A2AC;
+					};
+					905D6F0F2071EB380061A2AC = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 905D6EED2071EB370061A2AC;
+					};
+					905D6F232071EB4E0061A2AC = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					905D6F2F2071EB4E0061A2AC = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 905D6EE92071EB370061A2AC /* Build configuration list for PBXProject "HeartKeeper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 905D6EE52071EB370061A2AC;
+			productRefGroup = 905D6EEF2071EB370061A2AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				905D6EED2071EB370061A2AC /* HeartKeeper */,
+				905D6F042071EB380061A2AC /* HeartKeeperTests */,
+				905D6F0F2071EB380061A2AC /* HeartKeeperUITests */,
+				905D6F232071EB4E0061A2AC /* HeartKeeperWatch */,
+				905D6F2F2071EB4E0061A2AC /* HeartKeeperWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		905D6EEC2071EB370061A2AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				905D6EFF2071EB380061A2AC /* LaunchScreen.storyboard in Resources */,
+				905D6EFC2071EB380061A2AC /* Assets.xcassets in Resources */,
+				905D6EF72071EB370061A2AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905D6F032071EB380061A2AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905D6F0E2071EB380061A2AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905D6F222071EB4E0061A2AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				905D6F2A2071EB4E0061A2AC /* Assets.xcassets in Resources */,
+				905D6F282071EB4E0061A2AC /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905D6F2E2071EB4E0061A2AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				905D6F3E2071EB4F0061A2AC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		905D6EEA2071EB370061A2AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				905D6EF42071EB370061A2AC /* ViewController.swift in Sources */,
+				905D6EFA2071EB380061A2AC /* HeartKeeper.xcdatamodeld in Sources */,
+				905D6EF22071EB370061A2AC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905D6F012071EB380061A2AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				905D6F0A2071EB380061A2AC /* HeartKeeperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905D6F0C2071EB380061A2AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				905D6F152071EB380061A2AC /* HeartKeeperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905D6F2C2071EB4E0061A2AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				905D6F3A2071EB4E0061A2AC /* NotificationController.swift in Sources */,
+				905D6F3C2071EB4E0061A2AC /* ComplicationController.swift in Sources */,
+				905D6F382071EB4E0061A2AC /* ExtensionDelegate.swift in Sources */,
+				905D6F362071EB4E0061A2AC /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		905D6F072071EB380061A2AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 905D6EED2071EB370061A2AC /* HeartKeeper */;
+			targetProxy = 905D6F062071EB380061A2AC /* PBXContainerItemProxy */;
+		};
+		905D6F122071EB380061A2AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 905D6EED2071EB370061A2AC /* HeartKeeper */;
+			targetProxy = 905D6F112071EB380061A2AC /* PBXContainerItemProxy */;
+		};
+		905D6F332071EB4E0061A2AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 905D6F2F2071EB4E0061A2AC /* HeartKeeperWatch Extension */;
+			targetProxy = 905D6F322071EB4E0061A2AC /* PBXContainerItemProxy */;
+		};
+		905D6F422071EB4F0061A2AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 905D6F232071EB4E0061A2AC /* HeartKeeperWatch */;
+			targetProxy = 905D6F412071EB4F0061A2AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		905D6EF52071EB370061A2AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				905D6EF62071EB370061A2AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		905D6EFD2071EB380061A2AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				905D6EFE2071EB380061A2AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		905D6F262071EB4E0061A2AC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				905D6F272071EB4E0061A2AC /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		905D6F172071EB380061A2AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		905D6F182071EB380061A2AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		905D6F1A2071EB380061A2AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeartKeeper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Paul-Asyn.HeartKeeper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		905D6F1B2071EB380061A2AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeartKeeper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Paul-Asyn.HeartKeeper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		905D6F1D2071EB380061A2AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeartKeeperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Paul-Asyn.HeartKeeperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeartKeeper.app/HeartKeeper";
+			};
+			name = Debug;
+		};
+		905D6F1E2071EB380061A2AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeartKeeperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Paul-Asyn.HeartKeeperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeartKeeper.app/HeartKeeper";
+			};
+			name = Release;
+		};
+		905D6F202071EB380061A2AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeartKeeperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Paul-Asyn.HeartKeeperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeartKeeper;
+			};
+			name = Debug;
+		};
+		905D6F212071EB380061A2AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeartKeeperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Paul-Asyn.HeartKeeperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeartKeeper;
+			};
+			name = Release;
+		};
+		905D6F452071EB4F0061A2AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HeartKeeperWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Paul-Asyn.HeartKeeper.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		905D6F462071EB4F0061A2AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HeartKeeperWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Paul-Asyn.HeartKeeper.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		905D6F492071EB4F0061A2AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = HeartKeeperWatch_Extension;
+				INFOPLIST_FILE = HeartKeeperWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "Paul-Asyn.HeartKeeper.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		905D6F4A2071EB4F0061A2AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = HeartKeeperWatch_Extension;
+				INFOPLIST_FILE = HeartKeeperWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "Paul-Asyn.HeartKeeper.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		905D6EE92071EB370061A2AC /* Build configuration list for PBXProject "HeartKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				905D6F172071EB380061A2AC /* Debug */,
+				905D6F182071EB380061A2AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		905D6F192071EB380061A2AC /* Build configuration list for PBXNativeTarget "HeartKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				905D6F1A2071EB380061A2AC /* Debug */,
+				905D6F1B2071EB380061A2AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		905D6F1C2071EB380061A2AC /* Build configuration list for PBXNativeTarget "HeartKeeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				905D6F1D2071EB380061A2AC /* Debug */,
+				905D6F1E2071EB380061A2AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		905D6F1F2071EB380061A2AC /* Build configuration list for PBXNativeTarget "HeartKeeperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				905D6F202071EB380061A2AC /* Debug */,
+				905D6F212071EB380061A2AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		905D6F442071EB4F0061A2AC /* Build configuration list for PBXNativeTarget "HeartKeeperWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				905D6F452071EB4F0061A2AC /* Debug */,
+				905D6F462071EB4F0061A2AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		905D6F482071EB4F0061A2AC /* Build configuration list for PBXNativeTarget "HeartKeeperWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				905D6F492071EB4F0061A2AC /* Debug */,
+				905D6F4A2071EB4F0061A2AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		905D6EF82071EB380061A2AC /* HeartKeeper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				905D6EF92071EB380061A2AC /* HeartKeeper.xcdatamodel */,
+			);
+			currentVersion = 905D6EF92071EB380061A2AC /* HeartKeeper.xcdatamodel */;
+			path = HeartKeeper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 905D6EE62071EB370061A2AC /* Project object */;
+}
